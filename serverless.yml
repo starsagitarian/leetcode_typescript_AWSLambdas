@@ -1,0 +1,21 @@
+service: leetcode-lambda-functions
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: eu-west-1
+
+functions:
+  mergeStringsAlternately:
+    handler: dist/13_08_2024/mergeStringsAlternately.handler
+    events:
+      - http:
+          path: merge-strings-alternately
+          method: post
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    port: 3024

@@ -1,0 +1,24 @@
+{
+  "name": "leetcode_typescript_awslambdas",
+  "version": "1.0.0",
+  "description": "leetcode questions created as AWS lambdas using typescript",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "serverless offline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.143",
+    "@types/node": "^22.2.0",
+    "serverless-offline": "^13.6.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1672.0",
+    "undici": "^6.19.7"
+  }
+}

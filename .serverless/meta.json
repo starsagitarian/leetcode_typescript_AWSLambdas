@@ -1,0 +1,132 @@
+{
+  "C:\\Users\\baiju\\OneDrive\\coding_projects\\leetcode_typescript_AWSLambdas": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.21",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeResolverProviders": {
+      "aws": {
+        "instance": {
+          "credentials": "<REDACTED>",
+          "serviceConfigFile": {
+            "service": "leetcode-lambda-functions",
+            "provider": {
+              "name": "aws",
+              "runtime": "nodejs16.x",
+              "region": "eu-west-1",
+              "stage": "dev",
+              "versionFunctions": true
+            },
+            "functions": {
+              "mergeStringsAlternately": {
+                "handler": "src/12_08_2024/mergeStringsAlternately.handler",
+                "events": [
+                  {
+                    "http": {
+                      "path": "merge-strings-alternately",
+                      "method": "post"
+                    }
+                  }
+                ]
+              }
+            },
+            "plugins": [
+              "serverless-offline"
+            ],
+            "custom": {
+              "serverless-offline": {
+                "port": 3024
+              }
+            }
+          },
+          "configFileDirPath": "C:\\Users\\baiju\\OneDrive\\coding_projects\\leetcode_typescript_AWSLambdas",
+          "config": {
+            "type": "aws"
+          },
+          "options": {
+            "port": "3024"
+          },
+          "stage": "dev",
+          "dashboard": null,
+          "isDefaultConfig": true
+        },
+        "resolvers": {}
+      }
+    },
+    "composeServiceName": null,
+    "servicePath": "C:\\Users\\baiju\\OneDrive\\coding_projects\\leetcode_typescript_AWSLambdas",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "leetcode-lambda-functions",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs16.x",
+        "region": "eu-west-1",
+        "stage": "dev",
+        "versionFunctions": true
+      },
+      "functions": {
+        "mergeStringsAlternately": {
+          "handler": "src/12_08_2024/mergeStringsAlternately.handler",
+          "events": [
+            {
+              "http": {
+                "path": "merge-strings-alternately",
+                "method": "post"
+              }
+            }
+          ]
+        }
+      },
+      "plugins": [
+        "serverless-offline"
+      ],
+      "custom": {
+        "serverless-offline": {
+          "port": 3024
+        }
+      }
+    },
+    "serviceRawFile": "service: leetcode-lambda-functions\n\nprovider:\n  name: aws\n  runtime: nodejs16.x\n  region: eu-west-1\n\nfunctions:\n  mergeStringsAlternately:\n    handler: src/12_08_2024/mergeStringsAlternately.handler\n    events:\n      - http:\n          path: merge-strings-alternately\n          method: post\n\nplugins:\n  - serverless-offline\n\ncustom:\n  serverless-offline:\n    port: 3024\n",
+    "command": [
+      "offline"
+    ],
+    "options": {
+      "port": "3024"
+    },
+    "error": {
+      "message": "Unrecognized option \"port\". Run \"serverless offline --help\" for a list of all available options.",
+      "stack": "ServerlessError2: Unrecognized option \"port\". Run \"serverless offline --help\" for a list of all available options.\n    at ensure_supported_command_default (file:///C:/Users/baiju/.serverless/releases/4.1.21/package/dist/sf-core.js:906:2605)\n    at runFramework (file:///C:/Users/baiju/.serverless/releases/4.1.21/package/dist/sf-core.js:950:2054)\n    at async route (file:///C:/Users/baiju/.serverless/releases/4.1.21/package/dist/sf-core.js:961:16356)\n    at async Object.run2 [as run] (file:///C:/Users/baiju/.serverless/releases/4.1.21/package/dist/sf-core.js:961:16754)\n    at async run3 (file:///C:/Users/baiju/.serverless/releases/4.1.21/package/dist/sf-core.js:961:18014)",
+      "code": "UNSUPPORTED_CLI_OPTIONS"
+    },
+    "params": {},
+    "machineId": "976a4e5338c8e2b81b44bf39680f4152",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "99bea1db-f8c8-4a52-b5db-574d82e57c17",
+    "orgName": "starsagitarian",
+    "userId": "LgpjlNhKNrLyLD3npt",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "starsagitarian",
+    "subscription": null,
+    "userEmail": "baiju.joseph@gmail.com",
+    "serviceProviderAwsCredentials": "<REDACTED>",
+    "serviceProviderAwsAccountId": "339712855571",
+    "versionSf": "4.1.21",
+    "serviceProviderAwsCfStackName": "leetcode-lambda-functions-dev",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}
