@@ -12,6 +12,13 @@ functions:
       - http:
           path: merge-strings-alternately
           method: post
+  gcdOfStrings:
+    handler: dist/14_08_2024/gcdOfStrings.handler
+    events:
+      - http:
+          path: gcd-of-strings
+          method: post
+  
 
 plugins:
   - serverless-offline

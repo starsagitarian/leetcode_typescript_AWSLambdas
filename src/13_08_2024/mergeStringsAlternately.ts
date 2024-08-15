@@ -1,6 +1,6 @@
-import { APIGatewayProxyHandler } from 'aws-lambda';
+import { APIGatewayProxyEvent, APIGatewayProxyResult, APIGatewayProxyHandler } from 'aws-lambda';
 
-export const handler: APIGatewayProxyHandler = async (event) => {
+export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
   const { word1, word2 } = JSON.parse(event.body || '{}');
 
   const mergeStringsAlternately = (word1: string, word2: string): string => {
